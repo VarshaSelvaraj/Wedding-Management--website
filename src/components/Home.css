@@ -1,0 +1,249 @@
+/* Home.css */
+.home-container {
+     
+  overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .home{
+    text-align: center;
+    color: azure;
+  }
+  .home-content button{
+    size: large;
+    font-size: 23px;
+    background-color: rgb(46, 146, 200);
+  }
+  .home-content button:hover{
+    size: large;
+    transform: scale(1.1); /* Increase the size by 10% when hovered */
+    transition: transform 0.3s ease;
+    font-size: 28px;
+  }
+  .home-content {
+    
+    
+    text-align: center;
+    color: white; 
+    
+  transition: opacity 1s; 
+  }
+  
+  h2 {
+    font-size: 36px; 
+    margin-bottom: 20px; 
+  }
+  
+  .home-content p {
+    background-color: rgba(193, 207, 212, 0.5);
+    padding-left: 0%;
+    font-size: 35px; /* Adjust the font size as needed */
+  }
+  /* Home.css */
+
+  .home-content {
+    opacity: 0; /* Set the initial opacity to 0 for fade-in effect */
+    transition: opacity 0.5s ease-in-out; /* Opacity transition */
+  }
+  
+  .home-content.fade-in {
+    opacity: 1; /* Increase opacity to 1 when the fade-in class is applied */
+  }
+
+/* Home.css */
+/* Add this CSS code for the grid layout */
+.grid-container {
+  overflow-x: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  /* Gap between grid items */
+   /* Adjust margin as needed */
+}
+
+.grid-item {
+  box-sizing: border-box;
+   /* Background color for grid items */
+  padding: 30px; /* Adjust padding as needed */
+  text-align: center; /* Center text within grid items */
+}
+
+.grid-item img{
+  height: 300px;
+  width: 300px;
+}
+/* In your CSS file or in-line styles */
+.rounded-image {
+  border-radius: 50%; /* This will create a circular shape */
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+}
+
+
+.home{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 88vh; 
+  width:100%;/* Set the height to cover the entire viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('https://images.squarespace-cdn.com/content/v1/5edf7ad5f69d4579ff820564/66af1460-b0c9-4a92-91fc-9885e2114105/boho-bridal-twirl-emilee-carpenter-photography-min.gif');
+}
+.footer{
+  background-color: #f5f5f5; /* Background color for grid items */
+  /* Adjust padding as needed */
+  text-align: center; 
+  width: 100%;
+}
+.social-media a{
+  text-decoration: none;
+  color: black;
+  font-style: oblique;
+}
+.homeCont{
+  width: 100%;
+
+  padding: 0px;
+  
+  background-image: url('https://images.squarespace-cdn.com/content/v1/5a3465b2cf81e0cf09ea4967/1594078401152-E0U56DQA928EZNAPBUYC/WK1_0124-min.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 420px;
+}
+.homeCont-text{
+ padding-top: 50px;
+ padding-left: 700px;
+ text-align: center;
+}
+.text-muted{
+  color: white;
+  font-size: 18px;
+
+}
+.homeCont button{
+  font-size: 20px;
+  background-color: rgb(105, 166, 184);
+}
+.homeCont button:hover{
+  size: large;
+  transform: scale(1.1); /* Increase the size by 10% when hovered */
+  transition: transform 0.3s ease;
+  font-size: 25px;
+  background-color: rgb(105, 166, 184);
+}
+
+
+
+/* Styles for the card container */
+.card-container {
+  display: flex;
+  overflow-x: auto;
+  justify-content: space-between; /* Distribute cards evenly */
+  margin: 20px 0; /* Add margin if needed */
+}
+
+/* Styles for individual cards */
+.card {
+  flex: 1; /* Each card takes an equal portion of space */
+  border: 1px solid #ccc; /* Add a border to each card */
+  padding: 20px; /* Add padding to space out content */
+  text-align: center;
+  margin-right: 40px; 
+  margin-left: 20px;  /* Center text */
+}
+
+/* Additional styles for card images */
+.card img {
+  max-width: 100%; 
+  height: 200px;/* Ensure images don't exceed card width */
+}
+
+/* Additional styles for card text */
+.card-text {
+  margin-top: 10px; 
+  font-size: 22px;
+  /* Add margin to separate text from the image */
+}
+/* Add this CSS to your Home.css or a separate CSS file */
+.what{
+  font-size: 23px;
+  color: white;
+}
+.wha{
+  font-size: 23px;
+  
+}
+.desc {
+ width:auto;
+  padding: 10px;
+  text-align: center;
+}
+/* Style the slider container */
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Style the slider */
+.slider {
+  display: flex;
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+  white-space: nowrap; /* Prevent line breaks between slides */
+}
+
+/* Style each slide */
+/* Style each slide */
+.slide {
+  flex: 0 0 25%; /* Set the width for each slide (one-third of the available width) */
+  scroll-snap-align: start;
+  position: relative;
+}
+
+
+.slide img {
+  width: 100%;
+  height: 420px;
+}
+
+/* Style the slide text */
+/* Style the slide text (initially hidden) */
+.slide-text {
+  position: absolute;
+  top: 0;
+  left: -100%; /* Initially position text outside the slide */
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.slide-textR {
+  position: absolute;
+  top: 0;
+  right: -100%; /* Initially position text outside the slide */
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Hover effect to slide in the text from the left */
+.slide:hover .slide-text {
+  left: 0; /* Slide in from the left */
+  opacity: 0.8;
+}
+.slide:hover .slide-textR {
+  right: 0; /* Slide in from the left */
+  opacity: 0.8;
+}
+

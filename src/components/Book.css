@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+.container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+    margin-left: 500px;
+   border-radius: 5px;
+    background-color: rgba(0,0,0,0.5) !important;
+    border: none;
+    font-family: 'Numans', sans-serif;
+    
+  }
+.cardB{
+  border: none;
+  padding: 10px;
+ 
+}
+  .booking-form-background{
+    background-image: url('https://cdn.fstoppers.com/media/2014/08/fstoppers-wedding-engagement-gif-animation1.gif');
+    background-size: cover; /* Adjust this as needed */
+    background-repeat: no-repeat;
+  
+   
+  }  
+  
+  
+  .form-control {
+   margin-bottom: 7px;
+   font-family: 'Numans', sans-serif;
+  }
+  
+  .form-group  {
+    margin-bottom: 7px;
+  }
+  .form-group input{
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .form-group select{
+    width: 100%;
+    padding: 10px;
+    font-family: 'Numans', sans-serif;
+    border-radius: 5px;
+    
+  }
+  
+  .btn-success {
+    width: 25%;
+    font-size: 14px;
+    font-family: 'Numans', sans-serif;
+    
+  }
+  .form-group button:hover{
+    size: large;
+    transform: scale(1.1); /* Increase the size by 10% when hovered */
+    transition: transform 0.3s ease;
+     font-size: 16px;
+    font-family: 'Numans', sans-serif;
+  }
+
+  
+  .red {
+    margin-top: 10px;
+    color:red;
+    text-decoration: none;
+  }
+  

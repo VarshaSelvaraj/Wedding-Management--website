@@ -1,0 +1,124 @@
+.services-page{
+   overflow-x: hidden;
+}
+
+.carousel-item {
+    position: relative;
+    
+    width: 100%;
+    height: 500px;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+  }
+  
+  .carousel-text {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 500px; /* Adjust as needed */
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.5); /* Background color with transparency */
+    padding: 20px;
+    font-size: 30px; /* Adjust padding as needed */
+  }
+
+
+
+/* Styles for the card container */
+.card-container1 {
+  display: flex;
+  justify-content: space-between; /* Distribute cards evenly */
+  margin: 20px 0; 
+  overflow-x: auto;
+  /* Add margin if needed */
+}
+
+/* Styles for individual cards */
+.card1{
+  padding: 20px; /* Add padding to space out content */
+  text-align: center;
+  margin-right: 40px; 
+  margin-left: 40px;
+  margin-top: 30px; 
+  flex: 1; /* Each card takes an equal portion of space */
+  border: 1px solid #ccc; /* Add a border to each card */
+  padding: 10px; /* Add padding to space out content */
+  text-align: center; 
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+
+}
+
+
+.card1:hover {
+  transform: scale(0.95); /* Scale down the card on hover */
+}
+
+.card-container1 img {
+    margin-top: 10px;
+  
+    height: 270px;
+    width: 280px;
+ 
+}
+
+.card-text {
+  margin-top: 10px; 
+  color: black;
+  
+}
+p{
+  font-size: 20px;
+}
+
+h2{
+  font-size: 33px;
+}
+.what{
+  font-size: 23px;
+}
+.service-description {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  transition: transform 0.2s, box-shadow 0.2s; /* Add a smooth transition effect */
+}
+.ser button{
+  font-size: 18px;
+ 
+}
+.ser button:hover{
+ 
+  transform: scale(1.1); /* Increase the size by 10% when hovered */
+  transition: transform 0.3s ease;
+  font-size: 20px;
+
+}
+.feedback-carousel {
+  text-align: center;
+}
+
+.feedback-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.feedback-content img {
+  width: 100px; /* Adjust the size as needed */
+  height: 100px; /* Adjust the size as needed */
+  border-radius: 50%; /* Makes the image round */
+}

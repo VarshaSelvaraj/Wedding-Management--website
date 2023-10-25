@@ -1,0 +1,60 @@
+.feedback-container {
+  text-align: center;
+  width: 500px; /* Increase the width */
+  padding: 20px;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  font-family: 'Numans', sans-serif;
+}
+
+  
+.fee-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://img.freepik.com/free-photo/arrangement-with-different-expressions_23-2148857192.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  .rating {
+    margin-bottom: 20px;
+  }
+  
+  .rating label {
+    cursor: pointer;
+  }
+  
+  .filled-star {
+    color: blue;
+  }
+  
+  .empty-star {
+    color: #ddd;
+  }
+  
+  .feedback-text {
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+    margin-right: 10px;
+  }
+  
+  button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
