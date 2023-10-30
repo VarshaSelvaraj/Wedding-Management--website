@@ -42,7 +42,7 @@ function BookingForm() {
 useEffect(() => {
   const token = localStorage.getItem('token');
 
-  fetch('http://localhost:4000/getUserDetails', {
+  fetch('https://event-be.onrender.com/getUserDetails', {
     headers: {
       Authorization: `Bearer ${token}`, // Replace with your actual authentication token
     },
@@ -99,7 +99,7 @@ const handleFormSubmit = async (e) => {
   e.preventDefault();
 
   try {
-    const response = await fetch('http://localhost:4000/submit-booking', {
+    const response = await fetch('https://event-be.onrender.com/submit-booking', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

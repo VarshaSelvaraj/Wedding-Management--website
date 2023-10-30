@@ -18,7 +18,7 @@ function LoginPage() {
     }
 
     try {
-      const response = await fetch('/coachlog', {
+      const response = await fetch('https://event-be.onrender.com/coachlog', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
