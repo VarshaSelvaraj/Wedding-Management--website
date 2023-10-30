@@ -9,39 +9,9 @@ import NavigationBar from '../components/NavigationBar';
 
 
 const ServicesPage = () => {
-  const feedbackItems = [
-    {
-      profileImage: 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png',
-      name: 'Customer 1',
-      feedback: 'Lorem ipsum feedback from Customer 1.',
-    },
-    {
-      profileImage: 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png',
-      name: 'Customer 2',
-      feedback: 'Lorem ipsum feedback from Customer 2.',
-    },
-    {
-      profileImage: 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png',
-      name: 'Customer 2',
-      feedback: 'Lorem ipsum feedback from Customer 2.',
-    },
-    {
-      profileImage: 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png',
-      name: 'Customer 2',
-      feedback: 'Lorem ipsum feedback from Customer 2.',
-    },
-    // Add more feedback items here
-  ];
   
-  const feedbackCarouselSettings = {
-    dots: true,
-    infinite: true,
-    speed: 1000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 6000, // Set the interval to switch slides (6 seconds).
-  };
+  
+  
   const carouselItems = [
     {
       image: 'https://lucymunozphotography.com/wp-content/uploads/2019/02/Lucy-Munoz-Photography-28-1.jpg',
@@ -74,11 +44,7 @@ const ServicesPage = () => {
     autoplay: true,      
     autoplaySpeed: 1000, 
   };
-  const iconSize = {
-    width: '50px',  // Adjust the size as needed
-    height: '50px', // Adjust the size as needed
-    borderRadius: '50%', // Makes the image round
-  };
+ 
 
   return (
     <div className="services-page">
@@ -153,20 +119,7 @@ const ServicesPage = () => {
 
       <center style={{padding:"60px",fontSize:"20px"}} className='ser'>We'd love to hear what you think about our services and management. Your feedback helps us improve and serve you better. Please take a moment to share your thoughts with us. Your insights are invaluable!"<br/><br/>
       <Link to="/feedback"><button>Give us your feedback here!</button></Link></center>
-      <div className="feedback-carousel">
-        <Slider {...feedbackCarouselSettings}>
-          {feedbackItems.map((item, index) => (
-            <div key={index} className="feedback-slide">
-              
-              <div className="feedback-text">
-              <img src={item.profileImage} alt={item.name} style={iconSize}  />
-                <h3>{item.name}</h3>
-                <p>{item.feedback}</p>
-              </div>
-            </div>
-          ))}
-        </Slider>
-      </div>
+      
 
       <br/><br/>
       <Footer/>

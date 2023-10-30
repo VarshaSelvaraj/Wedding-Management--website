@@ -1,4 +1,4 @@
-import React ,{ useState }from 'react';
+import React from 'react';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
@@ -25,7 +25,7 @@ import ContactLog from './components/ContactLog';
 import Feedback from './components/Feedback';
 import FeedbackLog from './components/FeedbackLog';
 function App() {
-  const [selectedDate, setSelectedDate] = useState('');
+  
 
   return (
     <Router>

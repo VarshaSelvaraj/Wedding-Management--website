@@ -1,5 +1,5 @@
 import React, { useState ,useEffect} from 'react';
-import { Link } from 'react-router-dom';
+
 import { useNavigate,useLocation } from 'react-router-dom';
 import './Book.css';
 import Swal from 'sweetalert2';
@@ -42,7 +42,7 @@ function BookingForm() {
 useEffect(() => {
   const token = localStorage.getItem('token');
 
-  fetch('/getUserDetails', {
+  fetch('http://localhost:4000/getUserDetails', {
     headers: {
       Authorization: `Bearer ${token}`, // Replace with your actual authentication token
     },
@@ -99,7 +99,7 @@ const handleFormSubmit = async (e) => {
   e.preventDefault();
 
   try {
-    const response = await fetch('/submit-booking', {
+    const response = await fetch('http://localhost:4000/submit-booking', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -128,7 +128,7 @@ const handleFormSubmit = async (e) => {
           </div>
           <div className="card-body">
             <form  onSubmit={handleFormSubmit}>
-            <div className="grid-containerB">
+            {/* <div className="grid-containerB">
     <div className="grid-itemB">
       
     <div className="form-group">
@@ -142,7 +142,7 @@ const handleFormSubmit = async (e) => {
           onChange={handleChange} readOnly/>
       </div>
   </div>
-</div>
+</div> */}
          
 <div className="grid-containerB">
     <div className="grid-itemB">

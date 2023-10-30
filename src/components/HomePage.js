@@ -27,7 +27,8 @@ function Home() {
       <div className='home'>
       <div className={`home-content ${fadeIn ? 'fade-in' : ''}`}><br/>
       <h1> <i><br/>"Minimalism is great.<br /> Maximalism is too.<br /> What we avoid is medium-ism."</i></h1>
-     <Link to="/Login"><button>Book Now!</button></Link>
+     <Link to="/signup"><button>Book Now!</button></Link>
+     {/* <Link to="/bookingform"><button>development</button></Link> */}
      </div>
   </div>
   <div className="desc">
